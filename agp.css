@@ -1,0 +1,502 @@
+/*=============for a cellphone screen//smallest app first===============*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+i {
+    color: #7F0600;
+}
+
+p:"AGP" {
+    color: greenyellow;
+}
+
+
+/*-----------------picture changing------------------------------------------*/
+
+img {
+    max-width: 425px;
+    height: auto;
+}
+
+#container {
+    position: relative;
+    height: 225px;
+    max-width: 610px;
+    margin-top: 1rem;
+}
+
+#container img {
+    position: absolute;
+    /*left: 0;*/
+}
+
+@-webkit-keyframes imgFade {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes imgFade {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes imgFade {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes imgFade {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#container img {
+    -webkit-animation-name: imgFade;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    -moz-animation-name: imgFade;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 8s;
+    -o-animation-name: imgFade;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 8s;
+    animation-name: imgFade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+#container img:nth-of-type(1) {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+#container img:nth-of-type(2) {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+#container img:nth-of-type(3) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+#container img:nth-of-type(4) {
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+}
+
+
+/*-----------------------------------------------------------*/
+
+.content {}
+
+
+/*---------------------------------------------------------*/
+
+body {
+    /*background-color: black;*/
+    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+
+
+/*-----------------------------------------------------------*/
+
+li {
+    /*height: auto;*/
+    transition: all .9s ease-in-out;
+    font-family: 'Bree Serif', serif;
+    font-style: italic;
+    color: #0404B4;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: #009eff;
+}
+
+.mainnav {
+    padding-top: 2.5rem;
+    margin-top: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    /*margin-left: .78rem*/
+    ;
+}
+
+header {
+    margin-left: .1rem;
+    padding-bottom: ;
+    width: 100%;
+    height: auto;
+}
+
+li {
+    padding-top: height: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-family: 'Bree Serif', serif;
+    align: left;
+    list-style: none;
+    background-color: #FFCF35;
+    align-content: center;
+    text-align: center;
+}
+
+
+/*.masthead {
+    font-size: 1.25rem
+}*/
+
+h1 {
+    max-height: auto;
+    padding: 1.5rem, 1.5rem, 1.5rem, 0rem;
+    border-width: 7px;
+    border-style: ridge;
+    border-color: yellow;
+    /*background-color: #5A9453;*/
+    font-size: .75rem;
+    width: 100%;
+    height: auto;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.5rem;
+    font-stretch: ultra-expanded;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.75rem;
+    text-align: center;
+    -webkit-animation: mymove 5s infinite;
+    /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes mymove {
+    from {
+        background-color: #E03221;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: green;
+    }
+}
+
+
+/*-----------h1 begins here-----------------------------------*/
+
+
+/*----------------------h1 ends here------------------------*/
+
+h2 {
+    padding: 1.25em .5em;
+    font-size: 1.55rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: rem;
+    margin-top: 1.75rem;
+}
+
+h4 {
+    text-align: center;
+}
+
+.wrapper {
+    align-content: center;
+    width: 95%;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+span {
+    /*--------------------------------*/
+    /*--------------------------------*/
+    padding-bottom: .25rem;
+    max-height: auto;
+    color: #FFEA00;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    font-color: yellow;
+    -webkit-animation: mymove 5s infinite;
+    /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes mymove {
+        from {
+            font-color: #E03221;
+        }
+        to {
+            font-color: blue;
+        }
+    }
+    /* Standard syntax */
+    @keyframes mymove {
+        from {
+            font-color: red;
+        }
+        to {
+            font-color: green;
+        }
+    }
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+.primary {
+    background-color: rgba(194, 168, 66, 0.96);
+    padding: 2rem 1rem;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.3rem;
+    margin: .25rem, .25rem;
+    padding: .25rem .5rem 1rem .5rem;
+    margin-left: .08rem;
+    box-sizing: ;
+    border-bottom: 1rem;
+}
+
+.side {
+    padding: 17px;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.3rem;
+    background-color: rgba(194, 168, 66, 0.96);
+}
+
+img {
+    width: 100%;
+}
+
+
+}
+@media screen and (max-width:550px) {
+    div[align="center"] {
+        max-width: 600px;
+        height: auto;
+        padding: 0px;
+    }
+}
+.masthead {
+    height: 15rem;
+}
+.footer {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================= for tablet screen =========every em=about 16px=========================*/
+@media screen and (min-width:35em) and (max-width:60em) {
+    .masthead {
+        width: 100%;
+    }
+    
+    h1 {
+        font-family: 'Russo One', sans-serif;
+        font-size: 3.25rem;
+    }
+    
+    .primary {
+        ;
+        float: left;
+        margin-right: 3rem;
+    }
+    
+    li {
+        max-width: 19.4%
+    }
+    
+    .mainnav ul {
+        max-width: 97%;
+    }
+    
+    h3 {
+        margin-top: ;
+        font-size: 20px;
+    }
+    
+    .mainnav ul li {
+        float: left;
+        width: 16.5%;
+        /*max-width: 30%;*/
+        background-color: purple;
+        margin-bottom: 3rem;
+        font-size: 22px;
+        margin-right: rem;
+    }
+    
+    .mainnav li a {
+        display: block;
+        background-color: gold;
+    }
+    
+    img {
+        max-width: px;
+        height: auto;
+    }
+    
+    .primary {
+        float: left;
+        width: 80%;
+    }
+    
+    .side {
+        float: right;
+        width: 37%;
+    }
+    
+    .footer {
+        max-width: 20%;
+        height: auto;
+        clear: both;
+        margin-top: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    h3 {
+        margin-top: 1.75rem;
+    }
+}
+
+/* =====================for a desktop screen ====================================================== */
+@media screen and (min-width:60em) {
+    .masthead {
+        width: 100%;
+    }
+    
+    .mainnav {
+        float: left;
+        width: 25%;
+    }
+    
+    .primary {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 15px;
+        -moz-column-gap: 15px;
+        column-gap: 15px;
+    }
+    
+    .content {
+        width: 67%;
+        float: left;
+    }
+    
+    img {
+        max-width: 425px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: .55rem;
+    }
+    
+    h1 {
+        font-family: 'Russo One', sans-serif;
+        font-size: 3.5rem;
+    }
+    
+    .footer {
+        width: 10%;
+        border-top: .5rem;
+        margin-top: .5rem;
+        align-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
